@@ -154,7 +154,7 @@
     ```
     # cat /etc/kubernetes/kubelet 
     
-    KUBELET_ARGS="--kubeconfig=/etc/kubernetes/master-kubeconfig.yaml --hostname-override=172.16.250.170 --fail-swap-on=false --logtostderr=false --log-dir=/var/log/kubernetes --v=2"
+    KUBELET_ARGS="--kubeconfig=/etc/kubernetes/master-kubeconfig.yaml --hostname-override=172.16.250.170 --fail-swap-on=false --cgroup-driver=systemd --logtostderr=false --log-dir=/var/log/kubernetes --v=2"
     ```
     ```
     # cat /etc/kubernetes/master-kubeconfig.yaml 
